@@ -1,0 +1,13 @@
+﻿extra line when recent files list is empty
+
+Log message properties are not used properly
+
+Folders count (components) is not correct.. either include special folders or exclude it
+
+start menu shortcuts and Desktop shortcuts(both empty) shown in summary form.. they should be visible only if there is data
+
+Configurable directory for features
+
+Feature levels - enabled desabled etc
+
+change Bootstrapper exe icon

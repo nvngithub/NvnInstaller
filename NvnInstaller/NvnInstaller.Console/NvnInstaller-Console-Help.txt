@@ -1,0 +1,9 @@
+﻿		NvnInstaller-Console options
+
+-b	Build the given Nvn Installer project file
+
+-bc	Build the given Nvn Installer project file and close the application
+
+-o=	Specify the location of the output file(.msi).
+
+-f=	Specify the location of Nvn Installer project file(.nvn).

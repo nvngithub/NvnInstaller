@@ -1,0 +1,5 @@
+[Shell]
+Command=2
+IconFile=SHELL32.DLL,45
+[Taskbar]
+Command=ToggleDesktop

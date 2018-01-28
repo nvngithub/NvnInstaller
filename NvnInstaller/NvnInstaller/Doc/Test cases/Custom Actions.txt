@@ -1,0 +1,20 @@
+all possible type of custom actions
+	DLL - Binary file, installed file
+	exe - Binary file, installed file
+	JScript - Binary file, installed file, property
+	VBScript - Binary file, installed file, property
+	Exe Command - possible applications and acceptable arguments
+
+Try some complex custom actions
+
+execution schedule
+	Before Install - custom actions executed only on installtion
+	After Install - custom actions executed only on installtion
+	uninstall - custom actions executed only on uninstallation
+	ROllback - Executed only for rollback
+
+multiple custom actions...
+	actions of same type and different types
+custom actions are executed in the given order
+
+multiple custom action with different install execute schedule

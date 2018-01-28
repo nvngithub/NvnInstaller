@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<UsefulConditions>
+		<Condition Description="Operating system is Windows 95" Condition="Version9X = 400"/>
+		<Condition Description="Operating system is Windows 95 OSR2.5" Condition="Version9X = 400 AND WindowsBuild = 1111"/>
+		<Condition Description="Operating system is Windows 98" Condition="Version9X = 410"/>
+		<Condition Description="Operating system is Windows 98 SE" Condition="Version9X = 410 AND WindowsBuild = 2222"/>
+		<Condition Description="Operating system is Windows ME" Condition="Version9X = 490"/>
+		<Condition Description="Operating system is Windows NT4" Condition="VersionNT = 400"/>
+		<Condition Description="Operating system is Windows NT4 and service pack 'n'" Condition="VersionNT = 400 AND ServicePackLevel = n"/>
+		<Condition Description="Operating system is Windows 2000" Condition="VersionNT = 500"/>
+		<Condition Description="Operating system is Windows 2000 and service pack 'n'" Condition="VersionNT = 500 AND ServicePackLevel = n"/>
+		<Condition Description="Operating system is Windows XP" Condition="VersionNT = 501"/>
+		<Condition Description="Operating system is Windows XP and service pack 'n'" Condition="VersionNT = 501 AND ServicePackLevel = n"/>
+		<Condition Description="Operating system is Windows XP Home and service pack 'n'" Condition="VersionNT = 501 AND MsiNTSuitePersonal AND ServicePackLevel = n"/>
+		<Condition Description="Operating system is Windows Server 2003" Condition="VersionNT = 502"/>
+		<Condition Description="Operating system is Windows Vista" Condition="VersionNT = 600"/>
+		<Condition Description="Operating system is Windows Vista SP1" Condition="VersionNT = 600 AND ServicePackLevel = 1"/>
+		<Condition Description="Operating system is Windows Server 2008" Condition="VersionNT = 600 AND MsiNTProductType = 3"/>
+		<Condition Description="Operating system is Windows 7" Condition="VersionNT = 601"/>
+		<Condition Description="Screen resolution: Width > 1000 and Height=800" Condition="ScreenX > &quot;1000&quot; AND ScreenY=&quot;800&quot;"/>
+		<Condition Description="Physical memory greater than or equal to 1GB" Condition="PhysicalMemory>=&quot;1024&quot;"/>
+	</UsefulConditions>
+	<WindowsProperties>
+		<Properties Type="Component Location Properties">
+			<WindowsProperty Name="OriginalDatabase" Description="The installer sets this property to the launched-from database, the database on the source, or the cached database."/>
+			<WindowsProperty Name="ParentOriginalDatabase" Description="The installer sets this property for installations run by a Concurrent Installation action."/>
+			<WindowsProperty Name="SourceDir" Description="Root directory that contains the source files."/>
+			<WindowsProperty Name="TARGETDIR" Description="Specifies the root destination directory for the installation. During an administrative installation this property is the location to copy the installation package."/>
+		</Properties>
+		<Properties Type="Configuration Properties">
+			<WindowsProperty Name="ACTION" Description="Initial action called after the installer is initialized."/>
+			<WindowsProperty Name="ALLUSERS" Description="Determines where configuration information is stored."/>
+			<WindowsProperty Name="ARPAUTHORIZEDCDFPREFIX" Description="URL of the update channel for an application."/>
+			<WindowsProperty Name="ARPCOMMENTS" Description="Provides Comments for the Add or Remove Programs in Control Panel."/>
+			<WindowsProperty Name="ARPCONTACT" Description="Provides Contact for the Add or Remove Programs in Control Panel."/>
+			<WindowsProperty Name="ARPINSTALLLOCATION" Description="Fully qualified path to the primary folder of an application."/>
+			<WindowsProperty Name="ARPNOMODIFY" Description="Disables functionality that modifies a product."/>
+			<WindowsProperty Name="ARPNOREMOVE" Description="Disables functionality that removes a product."/>
+			<WindowsProperty Name="ARPNOREPAIR" Description="Disables the Repair button in the Programs wizard."/>
+			<WindowsProperty Name="ARPPRODUCTICON" Description="Specifies the primary icon for the installation package."/>
+			<WindowsProperty Name="ARPREADME" Description="Provides a ReadMe for the Add or Remove Programs in Control Panel."/>
+			<WindowsProperty Name="ARPSIZE" Description="Estimated size of an application in kilobytes."/>
+			<WindowsProperty Name="ARPSYSTEMCOMPONENT" Description="Prevents display of an application in the Add or Remove Programs list."/>
+			<WindowsProperty Name="ARPURLINFOABOUT	URL" Description="for the home page of an application."/>
+			<WindowsProperty Name="ARPURLUPDATEINFO" Description="URL for application update information."/>
+			<WindowsProperty Name="AVAILABLEFREEREG" Description="Registry space (in kilobytes) that an application requires. Used by AllocateRegistrySpace action."/>
+			<WindowsProperty Name="CCP_DRIVE" Description="The root path for qualifying products for CCP."/>
+			<WindowsProperty Name="DefaultUIFont" Description="Default font style used for controls."/>
+			<WindowsProperty Name="DISABLEADVTSHORTCUTS" Description="Set to disable the generation the specific shortcuts that support installation-on-demand."/>
+			<WindowsProperty Name="DISABLEMEDIA" Description="Prevents the installer from registering media sources, such as a CD-ROMs, as valid sources for the product."/>
+			<WindowsProperty Name="DISABLEROLLBACK" Description="Disables rollback for the current configuration."/>
+			<WindowsProperty Name="EXECUTEACTION" Description="Top-level action that ExecuteAction initiates."/>
+			<WindowsProperty Name="EXECUTEMODE" Description="Mode of execution that the installer performs."/>
+			<WindowsProperty Name="FASTOEM" Description="Improves installation performance under specific OEM scenarios."/>
+			<WindowsProperty Name="INSTALLLEVEL" Description="Initial level where features are installed."/>
+			<WindowsProperty Name="LIMITUI" Description="UIlevel capped as Basic."/>
+			<WindowsProperty Name="LOGACTION" Description="List of action names to be logged."/>
+			<WindowsProperty Name="MEDIAPACKAGEPATH" Description="This property must be set to the relative path if the installation package is not located at the root of the CD-ROM."/>
+			<WindowsProperty Name="MSIARPSETTINGSIDENTIFIER" Description="This optional property contains a semi-colon delimited list of the registry locations where the application stores a user's settings and preferences. Available with Windows Installer 4.0."/>
+			<WindowsProperty Name="MSIDISABLEEEUI" Description="Disable the embedded user interface for the installation. Windows Installer 4.0 and earlier:  Not supported."/>
+			<WindowsProperty Name="MSIFASTINSTALL" Description="Reduce the time required to install a large Windows Installer package. Windows Installer 4.5 and earlier:  Not supported."/>
+			<WindowsProperty Name="MSIINSTALLPERUSER" Description="Requests that the Windows Installer install the package only for the current user. Windows Installer 4.5 and earlier:  Not supported."/>
+			<WindowsProperty Name="MSINODISABLEMEDIA" Description="Set this property to prevent the installer from setting the DISABLEMEDIA property."/>
+			<WindowsProperty Name="MSIENFORCEUPGRADECOMPONENTRULES" Description="Set this property to 1 (one) on the command line or in the Property Table to apply the upgrade component rules during small updates and minor upgrades of a specific product. Available beginning with Windows Installer 3.0."/>
+			<WindowsProperty Name="MSIUNINSTALLSUPERSEDEDCOMPONENTS" Description="When this property has been set to 1, the installer can unregister and uninstall redundant components to prevent leaving behind orphan components on the computer. Windows Installer 4.0 and earlier:  Not supported."/>
+			<WindowsProperty Name="PRIMARYFOLDER" Description="Allows the author to designate a primary folder for an installation. Used to determine the values for the PrimaryVolumePath, PrimaryVolumeSpaceAvailable, PrimaryVolumeSpaceRequired, and PrimaryVolumeSpaceRemaining properties."/>
+			<WindowsProperty Name="Privileged" Description="Runs an installation with elevated privileges."/>
+			<WindowsProperty Name="PROMPTROLLBACKCOST" Description="Action if there is insufficient disk space for the installation."/>
+			<WindowsProperty Name="REBOOT" Description="Forces or suppresses a restart."/>
+			<WindowsProperty Name="REBOOTPROMPT" Description="Suppresses the display of prompts for restarts to the user. Any restarts that are needed happen automatically."/>
+			<WindowsProperty Name="ROOTDRIVE" Description="Default drive for an installation."/>
+			<WindowsProperty Name="SEQUENCE" Description="A table that has the sequence table schema."/>
+			<WindowsProperty Name="SHORTFILENAMES" Description="Causes short file names to be used."/>
+			<WindowsProperty Name="TRANSFORMS" Description="List of transforms to be applied to a database."/>
+			<WindowsProperty Name="TRANSFORMSATSOURCE" Description="Informs the installer that the transforms for a product reside at the source."/>
+			<WindowsProperty Name="TRANSFORMSSECURE" Description="Setting the TRANSFORMSECURE property to 1 (one) informs the installer that transforms are to be cached locally on the user computer in a location where the user does not have write access."/>
+			<WindowsProperty Name="MsiLogFileLocation" Description="The installer sets the value of this property to the full path of the log file, when logging has been enabled. This property is available starting with Windows Installer 4.0."/>
+			<WindowsProperty Name="MsiLogging" Description="Sets the default logging mode for the Windows Installer package. This property is available starting with Windows Installer 4.0."/>
+			<WindowsProperty Name="MSIUSEREALADMINDETECTION" Description="Set this property to 1 to request that the installer use actual user information when setting the AdminUser property. This property is available starting with Windows Installer 4.0."/>
+		</Properties>
+		<Properties Type="Date Time Properties">
+			<WindowsProperty Name="Date" Description="The current date."/>
+			<WindowsProperty Name="Time" Description="The current time."/>
+		</Properties>
+		<Properties Type="Feature Installation Options Properties">
+			<WindowsProperty Name="ADDDEFAULT" Description="List of features to be installed in the default configuration."/>
+			<WindowsProperty Name="ADDLOCAL" Description="List of features to be installed locally."/>
+			<WindowsProperty Name="ADDSOURCE" Description="List of features to be run from source."/>
+			<WindowsProperty Name="ADVERTISE" Description="List of features to be advertised."/>
+			<WindowsProperty Name="COMPADDDEFAULT" Description="List of components to be installed in the default configuration."/>
+			<WindowsProperty Name="COMPADDLOCAL" Description="List of component IDs to be installed locally."/>
+			<WindowsProperty Name="COMPADDSOURCE" Description="List of component IDs to run from source media."/>
+			<WindowsProperty Name="FILEADDDEFAULT" Description="List of file keys for files to be installed in the default configuration."/>
+			<WindowsProperty Name="FILEADDLOCAL" Description="List of file keys for files to be run locally."/>
+			<WindowsProperty Name="FILEADDSOURCE" Description="List of file keys to be run from the source media."/>
+			<WindowsProperty Name="MSIDISABLELUAPATCHING" Description="Setting this property prevents Least Privileged User (LUA) patching of an application."/>
+			<WindowsProperty Name="MsiPatchRemovalList" Description="List of patches to be removed during the installation."/>
+			<WindowsProperty Name="MSIRESTARTMANAGERCONTROL" Description="Specifies whether the package uses the Restart Manager or FilesInUse functionality."/>
+			<WindowsProperty Name="MSIDISABLERMRESTART" Description="Specifies how applications or services that are currently using files affected by an update should be shutdown and restarted to enable the installation of the update."/>
+			<WindowsProperty Name="MSIRMSHUTDOWN" Description="Specifies how applications or services that are currently using files affected by an update should be shutdown to enable the installation of the update."/>
+			<WindowsProperty Name="MSIPATCHREMOVE" Description="Setting this property removes patches."/>
+			<WindowsProperty Name="PATCH" Description="Setting this property applies a patch."/>
+			<WindowsProperty Name="REINSTALL" Description="List of features to be reinstalled."/>
+			<WindowsProperty Name="REINSTALLMODE" Description="A string that contains letters that specify the type of reinstall to perform."/>
+			<WindowsProperty Name="REMOVE" Description="List of features to be removed."/>
+		</Properties>
+		<Properties Type="Hardware Properties">
+			<WindowsProperty Name="Alpha" Description="The numeric processor level when running on an Alpha processor. Note  This property is obsolete, the Alpha platform is not supported by Windows Installer."/>
+			<WindowsProperty Name="BorderSide" Description="The width of the window borders, in pixels."/>
+			<WindowsProperty Name="BorderTop" Description="The height of the window borders, in pixels."/>
+			<WindowsProperty Name="CaptionHeight" Description="The height of normal caption area, in pixels."/>
+			<WindowsProperty Name="ColorBits" Description="The number of adjacent color bits for each pixel."/>
+			<WindowsProperty Name="Intel" Description="The numeric processor level when running on an Intel processor."/>
+			<WindowsProperty Name="Intel64" Description="The numeric processor level when running on an Itanium processor."/>
+			<WindowsProperty Name="Msix64" Description="The numeric processor level when running on an x64 processor."/>
+			<WindowsProperty Name="PhysicalMemory" Description="The size of the installed RAM, in megabytes."/>
+			<WindowsProperty Name="ScreenX" Description="The width of the screen, in pixels."/>
+			<WindowsProperty Name="ScreenY" Description="The height of the screen, in pixels."/>
+			<WindowsProperty Name="TextHeight" Description="The height of characters, in logical units."/>
+			<WindowsProperty Name="VirtualMemory" Description="The amount of available page file space, in megabytes."/>
+		</Properties>
+		<Properties Type="Installation Status Properties">
+			<WindowsProperty Name="AFTERREBOOT" Description="Indicates current installation follows a reboot that the ForceReboot action invokes."/>
+			<WindowsProperty Name="CostingComplete" Description="Indicates whether disk space costing is complete."/>
+			<WindowsProperty Name="Installed" Description="Indicates that a product is already installed."/>
+			<WindowsProperty Name="MSICHECKCRCS" Description="The Installer does a CRC on files only if the MSICHECKCRCS property is set."/>
+			<WindowsProperty Name="MsiRestartManagerSessionKey" Description="The Installer sets this property to the session key for the Restart Manager session."/>
+			<WindowsProperty Name="MsiRunningElevated" Description="The Installer sets the value of this property to 1 when the installer is running with elevated privileges."/>
+			<WindowsProperty Name="MsiSystemRebootPending" Description="The Installer sets this property to 1 if a restart of the operating system is currently pending."/>
+			<WindowsProperty Name="MsiUIHideCancel" Description="The Installer sets MsiUIHideCancel to 1 when the internal install level includes INSTALLUILEVEL_HIDECANCEL."/>
+			<WindowsProperty Name="MsiUIProgressOnly" Description="The Installer sets MsiUIProgressOnly to 1 when the internal install level includes INSTALLUILEVEL_PROGRESSONLY."/>
+			<WindowsProperty Name="MsiUISourceResOnly" Description="MsiUISourceResOnly to 1 (one) when the internal install level includes INSTALLUILEVEL_SOURCERESONLY."/>
+			<WindowsProperty Name="NOCOMPANYNAME" Description="Suppresses the automatic setting of the COMPANYNAME property."/>
+			<WindowsProperty Name="NOUSERNAME" Description="Suppresses the automatic setting of the USERNAME property."/>
+			<WindowsProperty Name="OutOfDiskSpace" Description="Insufficient disk space to accommodate the installation."/>
+			<WindowsProperty Name="OutOfNoRbDiskSpace" Description="Insufficient disk space with rollback turned off."/>
+			<WindowsProperty Name="Preselected" Description="Features are already selected."/>
+			<WindowsProperty Name="PrimaryVolumePath" Description="The Installer sets the value of this property to the path of the volume that the PRIMARYFOLDER property designates."/>
+			<WindowsProperty Name="PrimaryVolumeSpaceAvailable" Description="The Installer sets the value of this property to a string that represents the total number of bytes available on the volume that the PrimaryVolumePath property references."/>
+			<WindowsProperty Name="PrimaryVolumeSpaceRemaining" Description="The Installer sets the value of this property to a string that represents the total number of bytes remaining on the volume that the PrimaryVolumePath property references if all the currently selected features are installed."/>
+			<WindowsProperty Name="PrimaryVolumeSpaceRequired" Description="The Installer sets the value of this property to a string that represents the total number of bytes required by all currently selected features on the volume that the PrimaryVolumePath property references."/>
+			<WindowsProperty Name="ProductLanguage" Description="Numeric language identifier (LANGID) for the database. (REQUIRED)"/>
+			<WindowsProperty Name="ReplacedInUseFiles" Description="Set if the installer installs over a file that is being held in use."/>
+			<WindowsProperty Name="RESUME" Description="Resumed installation."/>
+			<WindowsProperty Name="RollbackDisabled" Description="The installer sets this property when rollback is disabled."/>
+			<WindowsProperty Name="UILevel" Description="Indicates the user interface level."/>
+			<WindowsProperty Name="UpdateStarted" Description="Set when changes to the system have begun for this installation."/>
+			<WindowsProperty Name="UPGRADINGPRODUCTCODE" Description="Set by the installer when an upgrade removes an application."/>
+			<WindowsProperty Name="VersionMsi" Description="The installer sets this property to the version of Windows Installer that is run during the installation."/>
+		</Properties>
+		<Properties Type="Operating System Properties">
+			<WindowsProperty Name="AdminUser" Description="Set on Windows 2000 if the user has administrator privileges."/>
+			<WindowsProperty Name="ComputerName" Description="Computer name of the current system."/>
+			<WindowsProperty Name="MsiNetAssemblySupport" Description="On systems that support common language runtime assemblies, the Installer sets the value of this property to the file version of fusion.dll. The Installer does not set this property if the operating system does not support common language runtime assemblies."/>
+			<WindowsProperty Name="MsiNTProductType" Description="Indicates the Windows product type."/>
+			<WindowsProperty Name="MsiNTSuiteBackOffice" Description="On Windows 2000 and later operating systems, the Installer sets this property to 1 (one) only if Microsoft BackOffice components are installed."/>
+			<WindowsProperty Name="MsiNTSuiteDataCenter" Description="On Windows 2000 and later operating systems, the Installer sets this property to 1 (one) only if Windows 2000 Datacenter Server is installed."/>
+			<WindowsProperty Name="MsiNTSuiteEnterprise" Description="On Windows 2000 and later operating systems, the Installer sets this property to 1 (one) only if Windows 2000 Advanced Server is installed."/>
+			<WindowsProperty Name="MsiNTSuitePersonal" Description="On Windows XP and later operating systems, the Installer sets this property to 1 (one) only if the operating system is Workstation Personal (not Professional)."/>
+			<WindowsProperty Name="MsiNTSuiteSmallBusiness" Description="On Windows 2000 and later operating systems, the Installer sets this property to 1 (one) only if Microsoft Small Business Server is installed."/>
+			<WindowsProperty Name="MsiNTSuiteSmallBusinessRestricted" Description="On Windows 2000 and later operating systems, the Installer sets this property to 1 (one) only if Microsoft Small Business Server is installed with the restrictive client license."/>
+			<WindowsProperty Name="MsiNTSuiteWebServer" Description="On Windows 2000 and later operating systems, the Installer sets the MsiNTSuiteWebServer property to 1 (one) if the web edition of the Windows Server 2003 is installed. Only available with the Windows Server 2003 release of the Windows Installer."/>
+			<WindowsProperty Name="MsiTabletPC" Description="The installer sets this property to a nonzero value if the current operating system is Windows XP Tablet PC Edition."/>
+			<WindowsProperty Name="MsiWin32AssemblySupport" Description="On systems that support Win32 assemblies, the Installer sets the value of this property to the file version of sxs.dll. The Installer does not set this property if the operating system does not support Win32 assemblies."/>
+			<WindowsProperty Name="OLEAdvtSupport" Description="Set if OLE supports the Windows Installer."/>
+			<WindowsProperty Name="RedirectedDllSupport" Description="The Installer sets the RedirectedDllSupport property if the system performing the installation supports Isolated Components."/>
+			<WindowsProperty Name="RemoteAdminTS" Description="The Installer sets the RemoteAdminTS property when the system is a remote administration server running the Terminal Server role service."/>
+			<WindowsProperty Name="ServicePackLevel" Description="The version number of the operating system service pack."/>
+			<WindowsProperty Name="ServicePackLevelMinor" Description="The minor version number of the operating system service pack."/>
+			<WindowsProperty Name="SharedWindows" Description="Set when the system is operating as Shared Windows."/>
+			<WindowsProperty Name="ShellAdvtSupport" Description="Set if the shell supports feature advertising."/>
+			<WindowsProperty Name="SystemLanguageID" Description="Default language identifier for the system."/>
+			<WindowsProperty Name="TerminalServer" Description="Set when the system is a server running the Terminal Server role service."/>
+			<WindowsProperty Name="TTCSupport" Description="Indicates if the operating system supports using .ttc (true type font collections) files."/>
+			<WindowsProperty Name="Version9X" Description="Version number for the Windows operating system."/>
+			<WindowsProperty Name="VersionDatabase" Description="Numeric database version of the current installation."/>
+			<WindowsProperty Name="VersionNT" Description="Version number for the operating system."/>
+			<WindowsProperty Name="VersionNT64" Description="Version number for the operating system if the system is running on a 64-bit computer."/>
+			<WindowsProperty Name="Windows build" Description="Build number of the operating system."/>
+		</Properties>
+		<Properties Type="Product Information Properties">
+			<WindowsProperty Name="ARPHELPLINK" Description="Internet address or URL for technical support."/>
+			<WindowsProperty Name="ARPHELPTELEPHONE" Description="Technical support phone numbers."/>
+			<WindowsProperty Name="DiskPrompt" Description="String displayed by a message box that prompts for a disk."/>
+			<WindowsProperty Name="IsAdminPackage" Description="Set to 1 (one) if the current installation is running from a package created through an administrative installation."/>
+			<WindowsProperty Name="LeftUnit" Description="Places units to the left of the number."/>
+			<WindowsProperty Name="Manufacturer" Description="Name of the application manufacturer. (Required)"/>
+			<WindowsProperty Name="MediaSourceDir" Description="The installer sets this property to 1 (one) when the installation uses a media source, such as a CD-ROM."/>
+			<WindowsProperty Name="MSIINSTANCEGUID" Description="The presence of this property indicates that a product code changing transform is registered to the product."/>
+			<WindowsProperty Name="MSINEWINSTANCE" Description="This property indicates the installation of a new instance of a product with instance transforms."/>
+			<WindowsProperty Name="ParentProductCode" Description="The installer sets this property for installations that a Concurrent Installation action runs."/>
+			<WindowsProperty Name="PIDTemplate" Description="String used as a template for the PIDKEY property."/>
+			<WindowsProperty Name="ProductCode" Description="A unique identifier for a specific product release. (Required)"/>
+			<WindowsProperty Name="ProductName" Description="Human readable name of an application. (Required)"/>
+			<WindowsProperty Name="ProductState" Description="Set to the installed state of a product."/>
+			<WindowsProperty Name="ProductVersion" Description="String format of the product version as a numeric value. (Required)"/>
+			<WindowsProperty Name="UpgradeCode" Description="A GUID that represents a related set of products."/>
+		</Properties>
+		<Properties Type="Summary Information Update Properties">
+			<WindowsProperty Name="PATCHNEWPACKAGECODE" Description="The value of this property is written to the Revision Number Summary Property."/>
+			<WindowsProperty Name="PATCHNEWSUMMARYCOMMENTS" Description="The value of this property is written to the Comments Summary Property."/>
+			<WindowsProperty Name="PATCHNEWSUMMARYSUBJECT" Description="The value of this property is written to the Subject Summary Property."/>
+		</Properties>
+		<Properties Type="System Folder Properties">
+			<WindowsProperty Name="AdminToolsFolder" Description="The full path to the directory that contains administrative tools."/>
+			<WindowsProperty Name="AppDataFolder" Description="The full path to the Roaming folder for the current user."/>
+			<WindowsProperty Name="CommonAppDataFolder" Description="The full path to application data for all users."/>
+			<WindowsProperty Name="CommonFiles64Folder" Description="The full path to the predefined 64-bit Common Files folder."/>
+			<WindowsProperty Name="CommonFilesFolder" Description="The full path to the Common Files folder for the current user."/>
+			<WindowsProperty Name="DesktopFolder" Description="The full path to the Desktop folder."/>
+			<WindowsProperty Name="FavoritesFolder" Description="The full path to the Favorites folder for the current user."/>
+			<WindowsProperty Name="FontsFolder" Description="The full path to the Fonts folder."/>
+			<WindowsProperty Name="LocalAppDataFolder" Description="The full path to the folder that contains local (nonroaming) applications."/>
+			<WindowsProperty Name="MyPicturesFolder" Description="The full path to the Pictures folder."/>
+			<WindowsProperty Name="NetHoodFolder" Description="The full path to the NetHood folder."/>
+			<WindowsProperty Name="PersonalFolder" Description="The full path to the Documents folder for the current user."/>
+			<WindowsProperty Name="PrintHoodFolder" Description="The full path to the PrintHood folder."/>
+			<WindowsProperty Name="ProgramFiles64Folder" Description="The full path to the predefined 64-bit Program Files folder."/>
+			<WindowsProperty Name="ProgramFilesFolder" Description="The full path to the predefined 32-bit Program Files folder."/>
+			<WindowsProperty Name="ProgramMenuFolder" Description="The full path to the Program Menu folder."/>
+			<WindowsProperty Name="RecentFolder" Description="The full path to the Recent folder."/>
+			<WindowsProperty Name="SendToFolder" Description="The full path to the SendTo folder for the current user."/>
+			<WindowsProperty Name="StartMenuFolder" Description="The full path to the Start menu folder."/>
+			<WindowsProperty Name="StartupFolder" Description="The full path to the Startup folder."/>
+			<WindowsProperty Name="System16Folder" Description="The full path to folder for 16-bit system DLLs."/>
+			<WindowsProperty Name="System64Folder" Description="The full path to the predefined System64 folder."/>
+			<WindowsProperty Name="SystemFolder" Description="The full path to the System folder for the current user."/>
+			<WindowsProperty Name="TempFolder" Description="The full path to the Temp folder."/>
+			<WindowsProperty Name="TemplateFolder" Description="The full path to the Template folder for the current user."/>
+			<WindowsProperty Name="WindowsFolder" Description="The full path to the Windows folder."/>
+			<WindowsProperty Name="WindowsVolume" Description="The volume of the Windows folder."/>
+		</Properties>
+		<Properties Type="User Information Properties">
+			<WindowsProperty Name="AdminProperties" Description="ist of properties that are set during an administration installation."/>
+			<WindowsProperty Name="COMPANYNAME" Description="Organization name of the user who is performing the installation."/>
+			<WindowsProperty Name="LogonUser" Description="User name for the user who is currently logged on."/>
+			<WindowsProperty Name="MsiHiddenProperties" Description="List of properties that are prevented from being written into the log."/>
+			<WindowsProperty Name="PIDKEY" Description="Part of the Product ID that the user enters."/>
+			<WindowsProperty Name="ProductID" Description="Full Product ID after a successful validation."/>
+			<WindowsProperty Name="UserLanguageID" Description="Default language identifier of the current user."/>
+			<WindowsProperty Name="USERNAME" Description="User who is performing the installation."/>
+			<WindowsProperty Name="UserSID property" Description="Set by the installer according to the security identifier (SID) of the user."/>
+		</Properties>
+	</WindowsProperties>
+	<Operators>
+		<Operator Name="" Description=""/>
+	</Operators>
+</Settings>

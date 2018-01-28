@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.Scheduler", "NvnInstaller.Scheduler\NvnInstaller.Scheduler.csproj", "{11B1952C-6107-4184-BFAC-B8B1AD086260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.Common", "NvnInstaller.Common\NvnInstaller.Common.csproj", "{87EBCADE-BE9F-42C0-8024-9C2AA0C82079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.Console", "NvnInstaller.Console\NvnInstaller.Console.csproj", "{FDE42D6F-8F23-4F5C-AB0D-34841F107410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.LogViewer", "NvnInstaller.LogViewer\NvnInstaller.LogViewer.csproj", "{60D4B07E-7D69-4059-8521-243584098B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.WixCodeEditor", "NvnInstaller.WixCodeEditor\NvnInstaller.WixCodeEditor.csproj", "{51E78B05-79F0-40C8-AD33-D2C720917782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller", "NvnInstaller\NvnInstaller.csproj", "{FDE44420-CFCD-4D25-A6CD-88B7AA0EBCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NvnInstaller.MsiDotNet", "NvnInstaller.MsiDotNet\NvnInstaller.MsiDotNet.csproj", "{986CE10B-5163-4B0D-B27A-78D279DEEF61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11B1952C-6107-4184-BFAC-B8B1AD086260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B1952C-6107-4184-BFAC-B8B1AD086260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B1952C-6107-4184-BFAC-B8B1AD086260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B1952C-6107-4184-BFAC-B8B1AD086260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87EBCADE-BE9F-42C0-8024-9C2AA0C82079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87EBCADE-BE9F-42C0-8024-9C2AA0C82079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87EBCADE-BE9F-42C0-8024-9C2AA0C82079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87EBCADE-BE9F-42C0-8024-9C2AA0C82079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE42D6F-8F23-4F5C-AB0D-34841F107410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE42D6F-8F23-4F5C-AB0D-34841F107410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE42D6F-8F23-4F5C-AB0D-34841F107410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE42D6F-8F23-4F5C-AB0D-34841F107410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D4B07E-7D69-4059-8521-243584098B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D4B07E-7D69-4059-8521-243584098B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D4B07E-7D69-4059-8521-243584098B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D4B07E-7D69-4059-8521-243584098B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E78B05-79F0-40C8-AD33-D2C720917782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E78B05-79F0-40C8-AD33-D2C720917782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E78B05-79F0-40C8-AD33-D2C720917782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E78B05-79F0-40C8-AD33-D2C720917782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE44420-CFCD-4D25-A6CD-88B7AA0EBCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE44420-CFCD-4D25-A6CD-88B7AA0EBCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE44420-CFCD-4D25-A6CD-88B7AA0EBCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE44420-CFCD-4D25-A6CD-88B7AA0EBCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986CE10B-5163-4B0D-B27A-78D279DEEF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986CE10B-5163-4B0D-B27A-78D279DEEF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986CE10B-5163-4B0D-B27A-78D279DEEF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986CE10B-5163-4B0D-B27A-78D279DEEF61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

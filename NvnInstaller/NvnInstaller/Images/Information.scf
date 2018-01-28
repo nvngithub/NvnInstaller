@@ -1,0 +1,5 @@
+[Shell]
+Command=2
+IconFile=EXPLORER.EXE,7
+[Taskbar]
+Command=ToggleDesktop
