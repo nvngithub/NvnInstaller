@@ -1,0 +1,68 @@
+Step by step instruction to create a simple application to work with File Association.
+
+This sample is created using Visual Studio C# 2008 Express Edition.
+
+Steps to create application
+
+1. Start Visual Studio C# 2008.
+2. Create "Windows Forms Application" project with name "FileAssociationSample".
+3. Drop a label on the form. Here we are going to show the file path of selected file.
+4. add following code to "Form1.cs" to create a new property.
+
+        public string FilePath {
+            set { this.label1.Text = value; }
+        }
+
+5. By default Visual Studio creates Main function without any arguments. Modify it to accept string[] argument i.e Main function should look like below
+
+        [STAThread]
+        static void Main(string[] args) 
+
+6. Now set label text using the property created above and run Form1. Now code looks like below.
+
+	        [STAThread]
+        static void Main(string[] args) {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            Form1 form1 = new Form1();
+            if (args.Length > 0) {
+                form1.FilePath = args[0];
+            }
+
+            Application.Run(form1);
+        }
+
+Testing above application
+
+1. Just press F5. Application opens up with default value set for the label. This is because no argument is supplied while starting this application.
+2. Using Project Properties
+	A. Right click on Project in solution explorer and select "Properties". 
+	B. Select "Debug" in property window.
+	C. Enter any value for "Command line arguments". Enclose value in double quote for example "<value>" if you like to pass argument which contains space like file path
+	D. Now start the application
+
+
+Using this application with Nvn Installer
+1. Start Nvn Installer.
+2. Set all necessory properties in "Product Information" tab.
+3. Select "Components" tab (left side)
+4. Set Destination folder and add above application file under it.
+5. Select "File Association" tab.
+6. Click "New Extension". set following properties
+	Extension = qwe
+	Description = <any text>
+	
+	Click  "..." and select application added in Components tab.
+7. Select menu Project >> Build or Press F5 to build MSI package.
+
+Testing Installation package
+1. Install MSI file that you created using above steps
+2. Create file with extension "qwe". 
+	Just create a text file and change its extension.
+3. Double click above file with extension "qwe" which should show our sample application with label set with selected file path.
+
+
+Security Note
+
+This sample is provided to illustrate a concept and should not be used in applications or Web sites. Naveen Hegde, author of Nvn Installer assumes no liability for incidental or consequential damages should the sample be used for purposes other than as intended.

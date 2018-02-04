@@ -1,0 +1,3 @@
+LIBRARY	"Win32Dll"
+EXPORTS
+    SamplesAction
